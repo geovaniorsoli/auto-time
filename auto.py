@@ -6,9 +6,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime
 import os 
 from dotenv import load_dotenv
-load_dotenv()
 
-# Obter variáveis de ambiente
+# Carregar variáveis de ambiente
+load_dotenv()
 user = os.getenv("USER")
 password = os.getenv("PASS")
 web = os.getenv("WEB")
@@ -24,12 +24,9 @@ timers = {
     "timer4": timer4
 }
 
-# Selecionar o temporizador não nulo
-timerSelected = next((timer_value for timer_name, timer_value in timers.items() if timer_value), None)
-
 def getTime():
-    now = datetime.now().strftime("%H:%M")
-    return now == timerSelected
+    now = datetime.now().strftime("%H:%M:%S")
+    return now in timers.values()
 
 # Inicializar o driver do navegador
 driver = webdriver.Edge()
@@ -37,6 +34,7 @@ driver = webdriver.Edge()
 try:
     while True:
         if getTime():
+            print(f"Verificando hora: {datetime.now().strftime('%H:%M:%S')}")
             driver.execute_script("window.open('about:blank', '_blank');")
             driver.switch_to.window(driver.window_handles[-1])
             driver.get(web) 
@@ -44,22 +42,23 @@ try:
             inputs = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located((By.NAME, "email")))
             password_input = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.NAME, "password")))
             
-            # campos de entrada
             inputs[0].send_keys(user)
             password_input.send_keys(password)
             
             button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Acessar painel')]")))
             button.click()
                 
-            # marcar ponto
             button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(), 'Marcar Ponto')]")))
             button.click()
 
-            time.sleep(5)
-                
-            break
-        
-        time.sleep(60)
+            time.sleep(2)  
+
+            button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(), 'Marcar Ponto')]")))
+            button.click()
+
+            driver.close()  
+
+        time.sleep(60)  
 
 finally:
     driver.quit()

@@ -25,3 +25,20 @@ TIMER2="comeco do intervalo"
 TIMER3="termino do intervalo"
 TIMER4="saida"
 ```
+
+## Criando executavel
+
+```
+pip install pyinstaller
+```
+
+```
+pyinstaller --onefile auto.py
+```
+
+- Abra em o repositorio local 
+- auto-time
+  dist 
+    auto
+
+- execute 
