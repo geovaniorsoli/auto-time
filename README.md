@@ -36,3 +36,4 @@ pip install pyinstaller
 pyinstaller --onefile auto.py
 ```
 
+- Abra o arquivo auto, localizado dentro de dist.
