@@ -36,9 +36,4 @@ pip install pyinstaller
 pyinstaller --onefile auto.py
 ```
 
-- Abra em o repositorio local 
-- auto-time
-  dist 
-    auto
-
-- execute 
+- abra o arquivo auto, localizado dentro de dist.
