@@ -20,10 +20,6 @@ Projeto feito em python com selenium
 USER="usuario de login"
 PASS="senha"
 WEB="pagina web"
-TIMER1="entrada"
-TIMER2="comeco do intervalo"
-TIMER3="termino do intervalo"
-TIMER4="saida"
 ```
 
 ## Criando executavel
