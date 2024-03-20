@@ -7,7 +7,6 @@ from datetime import datetime
 import os 
 from dotenv import load_dotenv
 
-# Carregar variáveis de ambiente
 load_dotenv()
 user = os.getenv("USER")
 password = os.getenv("PASS")
@@ -28,7 +27,6 @@ def getTime():
     now = datetime.now().strftime("%H:%M:%S")
     return now in timers.values()
 
-# Inicializar o driver do navegador
 driver = webdriver.Edge()
 
 try:
