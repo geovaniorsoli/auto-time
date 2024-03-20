@@ -32,7 +32,6 @@ driver = webdriver.Edge()
 try:
     while True:
         if getTime():
-            print(f"Verificando hora: {datetime.now().strftime('%H:%M:%S')}")
             driver.execute_script("window.open('about:blank', '_blank');")
             driver.switch_to.window(driver.window_handles[-1])
             driver.get(web) 
