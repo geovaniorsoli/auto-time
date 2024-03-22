@@ -1,9 +1,5 @@
-// app/page.tsx
-import { Button } from '@nextui-org/button';
-import { TextGenerateEffect } from '@/components/ui/TextGenerateEffect';
 import stydef from "../styles/default.module.css"
 import { Accordion, AccordionItem } from "@nextui-org/react";
-import sty from "../styles/home.module.css"
 export default function About() {
   return (
     <>

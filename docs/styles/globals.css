@@ -26,6 +26,7 @@ html {
   background-color: #7828C8;
   color: #ffffff;
   padding: 20px 0;
+  margin-top: 5rem;
 }
 
 .title{
@@ -64,14 +65,14 @@ html {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  .footerSection {
-      flex-basis: 50%;
+@media (max-width: 600px) {
+  .footerContent {
+    display: grid;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: start;
+    
+    max-width: 300px;
   }
 }
 
-@media screen and (max-width: 576px) {
-  .footerSection {
-      flex-basis: 100%;
-  }
-}
