@@ -151,11 +151,12 @@ export default function docs() {
                         <Breadcrumbs isDisabled>
                             <BreadcrumbItem>auto-time</BreadcrumbItem>
                             <BreadcrumbItem>dist</BreadcrumbItem>
-                            <BreadcrumbItem>lauraScript</BreadcrumbItem>
+                            <BreadcrumbItem>auto</BreadcrumbItem>
                         </Breadcrumbs>
                     </CardBody>
                     <Divider />
                     <CardFooter>
+                    <p className="text-small text-default-500">você pode criar um atalho na area de trabalho, para facilitar o uso!</p>
                     </CardFooter>
                 </Card>
             </div>

@@ -19,7 +19,7 @@ export default function Nav() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <a href="/" className="font-bold text-inherit">lauraScript - automação</a>
+          <a href="/" className="font-bold text-inherit">Automação para ponto</a>
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent justify="end">
