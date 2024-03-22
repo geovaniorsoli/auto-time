@@ -7,6 +7,7 @@ import sty from "../styles/home.module.css"
 export default function About() {
   return (
     <>
+      <div id='sobre'></div>
       <div className={stydef.containerContent}>
         <h1 className={stydef.topic}> CONHECA SOBRE </h1>
         <h2 className={stydef.contentText}>

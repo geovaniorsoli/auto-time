@@ -7,21 +7,20 @@ export default function Footer() {
                 <div className="footerSection">
                     <h2 className='title'>Sobre</h2>
                     <ul>
-                        <li><a href="#">Documentação</a></li>
-                        <li><a href="#">Uso</a></li>
-                        <li><a href="#">Sobre</a></li>
+                        <li><a href="/docs">Documentação</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
                     </ul>
                 </div>
                 <div className="footerSection">
                     <h2 className='title'>Contato</h2>
                     <ul>
-                        <li><a href="#">Suporte</a></li>
+                        <li><a target='_blank' href="https://github.com/geovaniorsoli/auto-time/issues">Suporte</a></li>
                     </ul>
                 </div>
                 <div className="footerSection">
                     <h2 className='title'>Repositorio</h2>
                     <ul className="socialIcons">
-                        <li><a href="#">github</a></li>
+                        <li><a target='_blank' href="https://github.com/geovaniorsoli/auto-time">github</a></li>
                     </ul>
                 </div>
             </div>
