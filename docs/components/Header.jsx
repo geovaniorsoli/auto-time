@@ -12,7 +12,7 @@ export default function Header() {
      LENTA AO BATER PONTO?"
      />
     <Button className={sty.buttonConhecaMais} color="secondary">
-        Conheca o script Laura
+        Conheca o script
       </Button>
     </div>
     </>
