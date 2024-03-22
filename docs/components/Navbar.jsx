@@ -6,7 +6,7 @@ export default function Nav() {
 
   const menuItems = [
     { name: "Home", url: "/" },
-    { name: "Sobre", url: "#sobre" },
+    { name: "Sobre", url: "/#sobre"},
     { name: "Documentação", url: "/docs" },
   ];
 

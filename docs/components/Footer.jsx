@@ -8,7 +8,7 @@ export default function Footer() {
                     <h2 className='title'>Sobre</h2>
                     <ul>
                         <li><a href="/docs">Documentação</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="/#sobre">Sobre</a></li>
                     </ul>
                 </div>
                 <div className="footerSection">
