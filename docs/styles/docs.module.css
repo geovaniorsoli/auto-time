@@ -1,0 +1,8 @@
+.snippetContainer{
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    margin: 1rem;
+}
+

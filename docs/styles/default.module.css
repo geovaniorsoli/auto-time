@@ -1,0 +1,87 @@
+/* texts */
+
+.main{
+    font-size: 4rem;
+    font-family: bold;
+    width: 60%;
+    line-height: 60px;
+}
+
+.topic{
+    color: #7828C8;
+    font-size: 4rem;
+    font-family: bold;
+    margin-bottom: -30px;
+}
+
+.topicCenter{
+    color: #7828C8;
+    font-size: 4rem;
+    font-family: bold;
+    margin-bottom: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentText{
+    font-size: 2.5rem;
+    width: 70%;
+    line-height: 50px;
+    text-align: start;
+}
+
+/* containers */
+.containerCenter{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: start;
+    margin: 0rem auto;
+    gap: 2rem;
+    width: 80%;
+    height: 100vh;
+}
+
+.containerContent{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0rem auto;
+    gap: 2rem;
+    width: 80%;
+    height: 100vh;
+}
+.containerContentStart{
+    display: grid;
+    align-items: start;
+    align-content: start;
+    justify-content: start;
+    margin: 0rem auto;
+    gap: 2rem;
+    width: 60%;
+    height: 100vh;
+}
+
+.containerContentStartTitle{
+    display: grid;
+    align-items: start;
+    align-content: start;
+    justify-content: start;
+    margin: 3rem auto;
+    gap: 2rem;
+    width: 80%;
+}
+
+.containerContentCenterCard{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    width: 60%;
+    margin: 3rem auto;
+    height: auto;
+
+}
+

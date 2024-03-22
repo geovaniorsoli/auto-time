@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: regular;
+}
+
+@font-face {
+  font-family: regular;
+  src: url(../public/OverusedGrotesk-Medium.otf);
+}
+
+@font-face {
+  font-family: bold;
+  src: url(../public/OverusedGrotesk-ExtraBold.otf);
+}
+
+.footerBody {
+  background-color: #7828C8;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.title{
+  font-size: 1.1rem;
+  font-family: bold;
+  text-transform: uppercase;
+}
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerSection {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.footerSection h2 {
+  margin-bottom: 10px;
+}
+
+.footerSection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footerSection ul li {
+  margin-bottom: 5px;
+}
+
+.footerSection ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footerSection {
+      flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footerSection {
+      flex-basis: 100%;
+  }
+}
