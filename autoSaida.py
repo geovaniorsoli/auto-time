@@ -33,8 +33,8 @@ try:
     button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(), 'Marcar Ponto')]")))
     button.click()
 
-    # button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(), 'MARCAR PONTO')]")))
-    # button.click()
+    button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(), 'MARCAR PONTO')]")))
+    button.click()
 
                 
 finally:
