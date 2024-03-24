@@ -1,5 +1,7 @@
 import time
+import os 
 from selenium import webdriver
+import ctypes
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -31,12 +33,13 @@ try:
 
     button = WebDriverWait(driver, 9000).until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(), 'Marcar Ponto')]")))
     button.click()
-
+    
     # button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(), 'MARCAR PONTO')]")))
     # button.click()
-    
-    time.sleep(5)
 
+                
 finally:
+    time.sleep(3)
+    ctypes.windll.user32.LockWorkStation()
     driver.quit()
-
+    

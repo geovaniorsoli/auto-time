@@ -21,24 +21,24 @@ try:
     driver.switch_to.window(driver.window_handles[-1])
     driver.get(web) 
 
-    inputs = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located((By.NAME, "email")))
-    password_input = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.NAME, "password")))
+    inputs = WebDriverWait(driver, 9000).until(EC.visibility_of_all_elements_located((By.NAME, "email")))
+    password_input = WebDriverWait(driver, 9000).until(EC.visibility_of_element_located((By.NAME, "password")))
     
     inputs[0].send_keys(user)
     password_input.send_keys(password)
     
-    button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Acessar painel')]")))
+    button = WebDriverWait(driver, 9000).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Acessar painel')]")))
     button.click()
 
-    button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(), 'Marcar Ponto')]")))
+    button = WebDriverWait(driver, 9000).until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(), 'Marcar Ponto')]")))
     button.click()
-
-    button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(), 'MARCAR PONTO')]")))
-    button.click()
+    
+    # button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(), 'MARCAR PONTO')]")))
+    # button.click()
 
                 
 finally:
-    time.sleep(10)
+    time.sleep(3)
     os.system("shutdown /s /t 1")
     driver.quit()
     
