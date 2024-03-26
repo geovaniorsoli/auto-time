@@ -114,6 +114,11 @@
 .span{
     color: #66AAF9;
 }
+
+.buttonBaixar{
+    width: 50%;
+    margin: 3rem auto;
+}
 @media (max-width:600px){
     .main{
         font-size: 2.5rem;

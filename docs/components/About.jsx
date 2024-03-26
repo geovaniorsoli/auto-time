@@ -1,7 +1,8 @@
 import stydef from "../styles/default.module.css"
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import { Accordion, AccordionItem, Button } from "@nextui-org/react";
 import Image from "next/image";
 import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
+import { Github } from 'lucide-react';
 export default function About() {
   return (
     <>
@@ -49,6 +50,8 @@ export default function About() {
         </Tab>
       </Tabs>
     </div>  
+      <Button className={stydef.buttonBaixar} color="primary" variant="flat"> Baixar pelo github <Github /> </Button>
+    
         <Accordion>
           <AccordionItem key="1" aria-label="Accordion 1" title="MOTIVAÇÃO">
             <h1>  projeto foi motivado por uma necessidade de
@@ -96,7 +99,7 @@ export default function About() {
               sem a necessidade de intervenção manual.  </h1>
           </AccordionItem>
         </Accordion>
-      </div>
+        </div>
     </>
   )
 }
