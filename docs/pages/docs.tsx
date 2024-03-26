@@ -130,6 +130,8 @@ export default function docs() {
                         <div className={sty.snippetContainer}>
                             <Snippet color="default">pip install pyinstaller</Snippet>
                             <Snippet color="default">pyinstaller --onefile auto.py</Snippet>
+                            <Snippet color="default">pyinstaller --onefile autoIntervalo.py</Snippet>
+                            <Snippet color="default">pyinstaller --onefile autoSaida.py</Snippet>
                         </div>
                         <p className="text-small text-default-500">Este script não armazena nenhum tipo de dado, sendo seguro.</p>
                     </CardBody>
