@@ -165,4 +165,11 @@
         margin: 3rem auto;
         height: auto;
     }
+
+    .containerImg{
+        display: grid;
+        align-items: center;
+        gap: 1rem;
+    }
+    
 }

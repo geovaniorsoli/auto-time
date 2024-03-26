@@ -114,8 +114,6 @@ export default function docs() {
                     <CardFooter>
                     </CardFooter>
                 </Card>
-
-
                 <Card className="max-w-[400px]">
                     <CardHeader className="flex gap-3">
                         <div className="flex flex-col">
@@ -136,7 +134,6 @@ export default function docs() {
                     <CardFooter>
                     </CardFooter>
                 </Card>
-
                 <Card className="max-w-[400px]">
                     <CardHeader className="flex gap-3">
                         <div className="flex flex-col">
