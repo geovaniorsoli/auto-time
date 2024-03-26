@@ -57,7 +57,7 @@ export default function docs() {
                         <Link
                             isExternal
                             showAnchorIcon
-                            href="https://github.com/geovaniorsoli/oitchau-facilitador"
+                            href="https://github.com/geovaniorsoli/oitchau-facilitador-script"
                         >
                             GitHub
                         </Link>
@@ -79,8 +79,7 @@ export default function docs() {
                     <CardBody>
                         <p className="text-small mb-2 text-default-500">Dependências:</p>
                         <div className={sty.snippetContainer}>
-                            <Snippet color="default"> pip install selenium</Snippet>
-                            <Snippet color="default"> pip install python-dotenv</Snippet>
+                            <Snippet color="default"> pip install selenium, python-dotenv </Snippet>
                         </div>
                     </CardBody>
                     <Divider />
@@ -129,9 +128,7 @@ export default function docs() {
                         <p className="text-small text-default-500">Passos para criar o executável:</p>
                         <div className={sty.snippetContainer}>
                             <Snippet color="default">pip install pyinstaller</Snippet>
-                            <Snippet color="default">pyinstaller --onefile auto.py</Snippet>
-                            <Snippet color="default">pyinstaller --onefile autoIntervalo.py</Snippet>
-                            <Snippet color="default">pyinstaller --onefile autoSaida.py</Snippet>
+                            <Snippet color="default">pyinstaller --onefile auto.py, autoIntervalo.py, autoSaida.py</Snippet>
                         </div>
                         <p className="text-small text-default-500">Este script não armazena nenhum tipo de dado, sendo seguro.</p>
                     </CardBody>

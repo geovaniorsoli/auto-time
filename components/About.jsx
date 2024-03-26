@@ -9,7 +9,8 @@ export default function About() {
       <div id='sobre'></div>
       <div className={stydef.containerContent}>
         <h1 className={stydef.topic}> CONHECA SOBRE </h1>
-
+        
+        <div className={stydef.containerImg}> 
         <Image className={stydef.img} src="/img/oitchau.png" height={1000} width={1000} /> 
 
         <h2 className={stydef.contentText}>
@@ -17,6 +18,7 @@ export default function About() {
           marcar o ponto na plataforma oitchau,
           que em horário de pico,
           maioria das vezes demora para abrir.</h2>
+</div>
 
           <h1 className={stydef.topic}> CONHEÇA OS 3 SCRIPTS </h1>
 

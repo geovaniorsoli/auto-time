@@ -86,9 +86,15 @@
     height: auto;
 }
 
+.containerImg{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .img{
     width: 100%;
-    max-width: 1000px;
+    max-width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
