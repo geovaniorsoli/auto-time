@@ -34,7 +34,7 @@ export default function docs() {
                         <Link
                             isExternal
                             showAnchorIcon
-                            href="https://www.microsoft.com/en-us/edge"
+                            href="https://www.microsoft.com/pt-br/edge/download?form=MA13M0"
                         >
                             Microsoft Edge (versão Dev)
                         </Link>
@@ -57,7 +57,7 @@ export default function docs() {
                         <Link
                             isExternal
                             showAnchorIcon
-                            href="https://github.com/nextui-org/nextui"
+                            href="https://github.com/geovaniorsoli/oitchau-facilitador"
                         >
                             GitHub
                         </Link>
