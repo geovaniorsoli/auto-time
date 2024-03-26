@@ -4,7 +4,8 @@ import { TextGenerateEffect } from '@/components/ui/TextGenerateEffect';
 import stydef from "../styles/default.module.css"
 import {Link} from "@nextui-org/react";
 import sty from "../styles/home.module.css"
-import { MoveRight } from 'lucide-react';
+import { Download } from 'lucide-react';
+import {Popover, PopoverTrigger, PopoverContent} from "@nextui-org/react";
 export default function Header() {
   return (
     <>
@@ -13,9 +14,21 @@ export default function Header() {
      words="PROBLEMAS COM PLATAFORMA
      LENTA AO BATER PONTO?"
      />
-      <Button as={Link} className={sty.buttonConhecaMais} variant="flat"  href="#sobre" color="secondary">
-      Conheca o script <MoveRight />
+    <Popover className={sty.Popover} placement="bottom" offset={20}>
+      <PopoverTrigger>
+      <Button className={sty.buttonConhecaMais} variant="flat" target='_blank'   color="primary">
+      Baixar o script <Download />
       </Button>
+      </PopoverTrigger>
+      <PopoverContent>
+        <div className={sty.popcontent}>
+          <div className="text-small font-bold">Atenção</div>
+          <div className="text-tiny">Esse script é somente disponível </div>
+          <div className="text-tiny"> para plataforma oitchau</div>
+          <Link href="https://github.com/geovaniorsoli/oitchau-facilitador" color="primary">Baixar</Link>
+        </div>
+      </PopoverContent>
+    </Popover>
     </div>
     </>
   )

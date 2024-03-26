@@ -8,14 +8,17 @@
 }
 
 .topic{
-    color: #7828C8;
+    color:#66AAF9;
     font-size: 4rem;
     font-family: bold;
-    margin-bottom: -30px;
+    margin-bottom: -40px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .topicCenter{
-    color: #7828C8;
+    color:#66AAF9;
     font-size: 4rem;
     font-family: bold;
     margin-bottom: -30px;
@@ -54,9 +57,9 @@
 }
 .containerContentStart{
     display: grid;
-    align-items: start;
-    align-content: start;
-    justify-content: start;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     margin: 0rem auto;
     gap: 2rem;
     width: 60%;
@@ -65,9 +68,9 @@
 
 .containerContentStartTitle{
     display: grid;
-    align-items: start;
-    align-content: start;
-    justify-content: start;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     margin: 3rem auto;
     gap: 2rem;
     width: 80%;
@@ -83,6 +86,34 @@
     height: auto;
 }
 
+.img{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto;
+    border-radius: 10px;
+    transition: .2s ease-in-out all;
+}
+
+.img:hover{
+    border-radius: 0px;
+    scale: 1.01;
+}
+
+.cardDescription{
+    width: 50%;
+    display: grid;
+    align-items: start;
+    justify-content: start; 
+    align-content: start;
+    margin: 0 auto;
+}
+
+.span{
+    color: #66AAF9;
+}
 @media (max-width:600px){
     .main{
         font-size: 2.5rem;
@@ -92,7 +123,7 @@
     }
 
     .topic{
-        color: #7828C8;
+        color:#66AAF9;
         font-size: 2rem;
         font-family: bold;
         margin: 0 auto;

@@ -24,7 +24,7 @@ export default function Nav() {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem>
-            <Button as={Link} href="/docs" color="secondary" variant="shadow">
+            <Button as={Link} href="/docs" color="primary" variant="flat">
               docs
             </Button>
           </NavbarItem>

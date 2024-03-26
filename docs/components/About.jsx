@@ -1,19 +1,54 @@
 import stydef from "../styles/default.module.css"
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import Image from "next/image";
+import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
 export default function About() {
   return (
     <>
       <div id='sobre'></div>
       <div className={stydef.containerContent}>
         <h1 className={stydef.topic}> CONHECA SOBRE </h1>
+
+        <Image className={stydef.img} src="/img/oitchau.png" height={1000} width={1000} /> 
+
         <h2 className={stydef.contentText}>
           Este script automatiza o processo de
-          marcar o ponto em um sistema web
-          o script é útil para
-          automatizar marcação
-          de ponto na plataforma oitchau,
+          marcar o ponto na plataforma oitchau,
           que em horário de pico,
           maioria das vezes demora para abrir.</h2>
+
+          <h1 className={stydef.topic}> CONHEÇA OS 3 SCRIPTS </h1>
+
+          <div className={stydef.cardDescription}>
+      <Tabs aria-label="Options">
+        <Tab key="Auto" title="Auto">
+          <Card>
+            <CardBody className={stydef.cardDescription}>
+              <span className={stydef.span}> Auto </span>  bate o ponto para você e espera o
+              tempo que for da plataforma
+              carregar aperta o botão e fecha a aba para você.
+            </CardBody>
+          </Card>  
+        </Tab>
+        <Tab key="AutoIntervalo" title="AutoIntervalo">
+          <Card>
+            <CardBody className={stydef.cardDescription}>
+            <span className={stydef.span}> AutoIntervalo </span>  tem a mesma função do Auto, porém bloqueia seu computador
+            após bater o ponto, assim deixando você seguro para sair para seu 
+            intervalo!       
+            </CardBody>
+          </Card>  
+        </Tab>
+        <Tab key="AutoSaida" title="AutoSaida">
+          <Card>
+            <CardBody className={stydef.cardDescription}>
+            <span className={stydef.span}> AutoSaida </span>  tem tudo o que o primeiro script, porem desliga o computador depois de 
+              bater o ponto para você. Assim você ir tranquilo para casa.
+              </CardBody>
+          </Card>  
+        </Tab>
+      </Tabs>
+    </div>  
         <Accordion>
           <AccordionItem key="1" aria-label="Accordion 1" title="MOTIVAÇÃO">
             <h1>  projeto foi motivado por uma necessidade de

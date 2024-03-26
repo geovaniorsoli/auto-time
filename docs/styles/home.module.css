@@ -4,3 +4,10 @@
     align-items: center;
     justify-content: center;
 }
+
+.popcontent{
+    display: grid; 
+    align-items: start;
+    justify-content: center;
+    padding: 1rem;
+}
